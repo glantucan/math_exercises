@@ -1,5 +1,5 @@
 ﻿/*	
-Ejercicio Vectores01:
+Ejercicio Vectores03:
 
 Posiciona cada cubo en su marcador correspondiente usando vectores 
 y teniendo encuenta que el marcador X se encuentra en el origen de coordenadas:

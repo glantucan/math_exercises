@@ -101,5 +101,6 @@ Los siguientes ejercicios sirven para practicar en el reconocimiento y resoluci�
 10. Rodando
 11. Adaptar la escala de un cubo a la textura.
 12. Tiro parabólico con ángulo fijo (tirachinas) calcula velocidad para alcanzar al blanco
-13. 
-	
+
+## Funciones matemáticas en `Matfh` y `Vector3`
+No todas, decidir cuales son las más interesantes para su nivel.

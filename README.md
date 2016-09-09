@@ -15,8 +15,7 @@ Los primeros ejercicios son para desarrollar la intuición sobre el sistema de c
 y teniendo en cuenta que el marcador X se encuentra en el origen de coordenadas. 
 Si la tienes desactivada, no olvides activar la rejilla de escena en *Guizmos* -> *Show Grid*, para que puedas estimar la posición de los marcadores con un mínimo de exactitud.
 Utiliza la función `Start()` y las variables que ya están definidas e inicializadas en el script que está como componente del gameobject vectores_01.
-
-  Ejemplo:
+>  Ejemplo:
   ```cs
 cube_3.transform.position = new Vector3 (1, 0, 3);
 ```
@@ -24,12 +23,11 @@ Tambien lo puedes hacer así:
   ```cs
 cube_3.transform.position = 1*Vector3.right + 3*Vector3.forward;
 ```
-  Usando los vectores unidad en las direcciones de los ejes: 
->   x -> Vector3.right 
->   y -> Vector3.up 
->   z -> Vector3.forward 
-
-  Te recomiendo que lo hagas de las dos maneras por que dependiendo de la situación 
+Usando los vectores unidad en las direcciones de los ejes: 
+>&nbsp;&nbsp;&nbsp;&nbsp;   x -> Vector3.right 
+>&nbsp;&nbsp;&nbsp;&nbsp;   y -> Vector3.up 
+>&nbsp;&nbsp;&nbsp;&nbsp;   z -> Vector3.forward 
+Te recomiendo que lo hagas de las dos maneras por que dependiendo de la situación 
 es más cómodo usar una o otra de las formas.
 
 2. Haz como en el ejercicio anterior, pero en la escena *Vectores02*. Ahora entra en juego la coordenada y.

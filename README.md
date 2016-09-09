@@ -34,7 +34,7 @@ es más cómodo usar una o otra de las formas.
 
 2. Haz como en el ejercicio anterior, pero en la escena *Vectores02*. Ahora entra en juego la coordenada y.
 
-3. En este ejercicio tienes que hace que el cubo marcado con la X se de un punto a otro de la ruta marcada en el suelo. El cubo tiene un script con una función (`mover`) que permite hacer que se mueva con velocidad constante dándole como parámetro el vector de desplazamiento (*) como se ve en este ejemplo:
+3. En este ejercicio tienes que hace que el cubo marcado con la X se de un punto a otro de la ruta marcada en el suelo. El cubo tiene un script con una función (`mover`) que permite hacer que se mueva con velocidad constante dándole como parámetro el vector de desplazamiento<sup>(1)</sup> como se ve en este ejemplo:
   
   ```cs
   void Start() {
@@ -43,17 +43,55 @@ es más cómodo usar una o otra de las formas.
 	  mover.Move(5 * Vector3.forward); // Ordenamos al cubo que se mueva al punto 2 azul.
 }
   ```
-  > (*): El vector desplazamiento es el vector que va desde donde esté el cubo hasta el lugar donde tiene que moverse.
+  > <sup>(1)</sup> El vector desplazamiento es el vector que va desde donde esté el cubo hasta el lugar donde tiene que moverse.
   > Aclaración: La función `Move()` no existe como tal en Unity. Es una función que he creado para estos ejercicios para que no te tengas que preocupar nada más que de lo básico de los vectores.
 
 4. Utilizando la misma técnica que en el ejercicio anterior mueve el cubo X de un vértice a otro del paralelepípedo grande que hay en la escena siguiendo el orden indicado por los marcadores y empezando en la X. 
 > Fíjate en que la textura del cubo tiene una rejilla: Las líneas más marcadas están separadas un metro entre sí.
 
-5. Otro más laberíntico.
-6. Sucesión infinita* de cubos. 
-7. Pared de cubos.
-8. Calcula la dirección en que hay que moverse.
-9. 
+5. En la escena Vectores05 haz que el cubo x se mueva por la superficie del bloque pasando por todas las esferas en el orden que quieras.  
+  
+  ---
+  
+  En muchos juegos el contenido de un nivel se genera al vuelo. En lugar de diseñar el escenario al completo en un Maya o similar y cargarlo entero se diseñan piezas modulares y se genera el nivel colocando esas piezas con cierta aleatoriedad o en un orden prefijado en un archivo de texto que sirve de mapa para generar el escenario. Esto tiene entre otras ventajas que la carga de cada nivel es mucho más rápida y que ocupamos menos memoria. 
+  El siguiente bloque de ejercicios trabaja algunas técnicas usando bucles y vectores para generar geometría más o menos compleja a partir de prefabs.   
+
+6. Utilizando el prefab **`[XXX]`**, genera una fila de 10 cubos consecutivos en la dirección x, empezando en la posición (-10, 0, 0)
+	* Crea la escena Vectores06. 
+    * Crea un GameObject vacío y llámalo Vectores06
+	* Crea el script Vectores06 en la carpeta de scripts y escribe el código del ejercicio en él. 
+	* En el bucle utiliza `GameObject.Instantiate()`<sup>(2)</sup> para crear clones del prefab 
+	* Tendrás que calcular la coordenada x del vector de posición de cada cubo utilizando una fórmula muy simple utilizando el contador del bucle como variable. 
+	
+  ><sup>(2)</sup> Fíjate en que en la ayuda de Unity para muchas funciones aparecen varias versiones de la misma función con distintos parámetros.
+  Eso significa que podemos utilizar la que más nos guste o convenga en cada momento.
+  En este caso vamos a utilizar la primera. 
+	```cs
+	public GameObject cubePrefab;
+	//...
+	void Start() {
+		//...
+		GameObject cubeInstance = Object.Instantiate(cubePrefab);
+		cubeInstance.transform.position = ...
+		//...
+	} 
+    ```
+	**Cuidado**: Los ejemplos de la página de Unity no siempre son muy claros y es fácil que te confundan si no entiendes bien la diferencia entre lo que hacen y lo que tú quieres hacer.
+7. Repite el ejercicio anterior pero genera la fila de cubos en la dirección z. Haz que empiece en la posición (-10, 0.5, -10).
+  
+  > A partir de ahora, aunque no se mencione en el escenario para cada ejercicio debes crear una nueva escena, con el nombre del tema seguido del número de ejercicio (en este caso será: Vectores07) y su correspondiente gameobject con el mismo nombre para colocar el script del ejercicio (también con el mismo nombre).
+
+8. RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab sin modificar que en los ejercicios anteriores. Hay varias formas. Una de ellas es usar la propiedad `normalized` de los vectores.
+  
+9. Repite los ejercicios 6 y 7 dejando 2, y 3 espacios entre los cubos, respectivamente.
+10. Construye una escalera de cubos, pero alternando clones del prefab **`[XXX]`** y **`[YYY]`**.
+> Podrías hacerlo utilizando dos bucles, pero puedes hacerlo si recuerdas o aprendes a usar el operador módulo: `%`. La expresión: 
+  ```cs 
+  int resto = 7 % 2
+  ```
+> Devuelve le resto de la división entera de `7` entre `2`. Es decir, el resultado de la división sería `3`, dejando un resto de `1`. O sea que `resto` tendría el valor `1`.
+
+
 
 ## Vectores y proporcionalidad
 Tenemos la suerte de que hay un montón de situaciones en la vida real que podemos simular en videojuegos con una simple relación de proporcionalidad.
@@ -88,11 +126,11 @@ Los siguientes ejercicios sirven para practicar en el reconocimiento y resoluci�
 
 ---
 
-1. Construlle el segundero de un reloj
-2. Construlle el minutero al ejercicio anterior (prop angulos/tiempo)
-2. Construlle un reloj digital (prop entre seg/min/horas)
+1. Construye el segundero de un reloj
+2. Construye el minutero al ejercicio anterior (prop angulos/tiempo)
+2. Construye un reloj digital (prop entre seg/min/horas)
 3. Añade al resultado del ejercicio anterior la aguja de las horas
-4. Construlle una escena simple con prefabs de tamaño fijo (usar meshrenderer para medir tamaños)
+4. Construye una escena simple con prefabs de tamaño fijo (usar meshrenderer para medir tamaños)
 5. Barra de daño
 6. Alcanza al otro PNJ en 5 segundos
 7. Tiro al plato

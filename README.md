@@ -79,66 +79,46 @@ es más cómodo usar una o otra de las formas.
 	**Cuidado**: Los ejemplos de la página de Unity no siempre son muy claros y es fácil que te confundan si no entiendes bien la diferencia entre lo que hacen y lo que tú quieres hacer.
 7. Repite el ejercicio anterior pero genera la fila de cubos en la dirección z. Haz que empiece en la posición (-10, 0.5, -10).
   
-  > A partir de ahora, aunque no se mencione en el escenario para cada ejercicio debes crear una nueva escena, con el nombre del tema seguido del número de ejercicio (en este caso será: Vectores07) y su correspondiente gameobject con el mismo nombre para colocar el script del ejercicio (también con el mismo nombre).
+  > A partir de ahora, aunque no se mencione en el enunciado, para cada ejercicio debes crear una nueva escena, con el nombre del tema seguido del número de ejercicio (en este caso será: Vectores07) y su correspondiente gameobject con el mismo nombre para colocar el script del ejercicio (también con el mismo nombre).
 
-8. RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab sin modificar que en los ejercicios anteriores. Hay varias formas. Una de ellas es usar la propiedad `normalized` de los vectores.
+8. RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab sin modificar que en los ejercicios anteriores. Hay varias formas. Una de ellas es usar la propiedad `normalized` de los vectores. Otra pasa por colocar las instancias como hijas un Gameobject vacío y rotar después éste último. ¿Se te ocurre alguna otra?
   
 9. Repite los ejercicios 6 y 7 dejando 2, y 3 espacios entre los cubos, respectivamente.
-10. Construye una escalera de cubos, pero alternando clones del prefab **`[XXX]`** y **`[YYY]`**.
-> Podrías hacerlo utilizando dos bucles, pero puedes hacerlo si recuerdas o aprendes a usar el operador módulo: `%`. La expresión: 
-  ```cs 
+10. Construye una escalera de cubos.  
+
+11. Construye una escalera de cubos, pero alternando clones del prefab **`[XXX]`** y **`[YYY]`**.
+
+ > Podrías hacerlo utilizando dos bucles, pero puedes hacerlo si recuerdas o aprendes a usar el operador módulo: `%`. La expresión:  
+ ```cs 
   int resto = 7 % 2
   ```
-> Devuelve le resto de la división entera de `7` entre `2`. Es decir, el resultado de la división sería `3`, dejando un resto de `1`. O sea que `resto` tendría el valor `1`.
+ > Devuelve le resto de la división entera de `7` entre `2`. Es decir, el resultado de la división sería `3`, dejando un resto de `1`. O sea que `resto` tendría el valor `1`.
+12. Construye una escalera de cubos dejando descansillos (con instancias del prefab *StairLanding*) cada 5 escalones.  
 
+13. Repite el ejercicio anterior, pero creando tú, tus propios prefabs de escalón y de descansillo<sup>(3)</sup> a  partir de la primitiva de un cubo  de Unity. ¿Por qué no funciona bien tu script del ejercicio anterior?. Arregla el script para estos nuevos prefabs.
+><sup>(3)</sup> Crea una carpeta Vectores13 en la capeta de Prefabs y coloca ahí los que crees para este ejercicio. Haz lo mismo en todos los ejercicios en los que necesites crear prefabs.
 
-
-## Vectores y proporcionalidad
-Tenemos la suerte de que hay un montón de situaciones en la vida real que podemos simular en videojuegos con una simple relación de proporcionalidad.
-
-**Ejemplo:**
-La velocidad (cuando es constante, o hablamos de velocidad media) es una relación de proporcionalidad entre el espacio recorrido y el tiempo que se tarda en recorrerlo. Cuando un objeto se mueve 5 metros en 2 segundos, si sabemos que su velocidad es constante, y queremos saber cuanto tardará en recorrer 20 metros, o sea 4 veces esa distancia, sabemos que tenemos que multiplicar el tiempo por ese mismo número: 4.  
-
-Si queremos usar la velocidad para calcular la distancia que se recorre en un tiempo determinado, es mucho más cómodo expresarla como los metros que se recorren en 1 segundo. En el ejemplo anterior sería 5/2 m/s = 2.5 m/s, ose 2.5 metros en 1 segundo.
- 
-Así si multiplicamos los segundos por 15, osea, queremos saber el espacio recorrido en 15 segundos, sólo tenemos que multiplicar el valor de los metros por 15 en la velocidad: 2.5 · 15 = 37.5 metros recorridos en 15 segundos.
- 
-Podemos hacer esta cuenta sencilla porque sabemos que en este tipo de situación (velocidad constante) la distancia recorrida es proporcional a la velocidad y al tiempo transcurrido. (s = v·t)
-
-**Fíjate** en que allí donde hay una relación de proporcionalidad, también hay una relación de proporcionalidad inversa. 
-
-El tiempo que tardas en recorrer una determinada distancia es proporcional a la distancia, pero inversamente proporcional a la velocidad: a más velocidad, menos tiempo.  (t = s/v)
-
----
-
-Normalmente no hacemos todo este razonamiento porque estamos muy acostumbrados a pensar en velocidades, pero lo importante es que seas capaz de reconocer la proporcionalidad entre dos cantidades y aplicar el razonamiento anterior a cualquier situación en la que haya una relación de proporcionalidad.
-	
-* En un videojuego el daño que te hace estar en una zona radiactiva o con una atmósfera ácida es porporcional al tiempo que pasas en ella, o dándole la vuelta el tiempo que puedes pasar en una atmósfera nociva es inversamente proporcinal a los puntos de daño que te quita por segundo.
-* El número de pociones de vida que puedes comprar en el mercadillo del mago es proporcional al dinero que tienes, e inversamente proporcional al precio de cada poción de vida.
-* Cuando se genera una escena proceduralmente hay que usar relaciones de proporcionalidad constantemente para colocar los objetos en el escenario:
-	* El número de baldosas que caben en una habitación es direcatmente proporcional al tamaño de la misma, e inversamente proporcional al tamaño de la baldosa.  
-	* El número de escalones que tiene una escalera es proporcional a la altura de la misma e inversamente proporcional a la altura del escalón.
-	* ...
-
-* El tiempo transcurrido desde el inicio del juego en un Update() es proporcional al numero de fotogramas reproducidos y a la duración de cada fotograma (aunque en este caso sea mejor medirlo de otras formas).
-
-Los siguientes ejercicios sirven para practicar en el reconocimiento y resolución de situaciones y problemas en los que la proporcionalidad juega un papel importante. Como para colocar y mover cosas en el espacio se trabaja con vectores en la mayoría de los caso tendrás que combinar estos razonamientos con los trabajados en los ejercicios anteriores.
-
----
-
-1. Construye el segundero de un reloj
-2. Construye el minutero al ejercicio anterior (prop angulos/tiempo)
-2. Construye un reloj digital (prop entre seg/min/horas)
+14. Seguir a un target movil
+6. Alcanza a un target movil en 5 segundos
+2. ??? Construye un reloj digital (prop entre seg/min/horas)
+1. Construye el segundero de un reloj. Debe rotar los grados que sean necesarios cada segundo, no de forma continua)
+2. Construye el minutero al ejercicio anterior. Debe rotar de forma continua
+3. Termina el reloj con la aguja de las horas.  Debe rotar de forma continua
+11. Añadir texturas a las agujas. Adaptar la escala de los cubos de las agujas a las texturas que se proporcionan.
 3. Añade al resultado del ejercicio anterior la aguja de las horas
-4. Construye una escena simple con prefabs de tamaño fijo (usar meshrenderer para medir tamaños)
+
 5. Barra de daño
-6. Alcanza al otro PNJ en 5 segundos
 7. Tiro al plato
 8. Tiro al plato 2D
 9. Tiro al plato 3D
 10. Rodando
-11. Adaptar la escala de un cubo a la textura.
-12. Tiro parabólico con ángulo fijo (tirachinas) calcula velocidad para alcanzar al blanco
+12. Tiro parabólico con inclinación fija (tirachinas). Calcula la velocidad para alcanzar al blanco
 
-## Funciones matemáticas en `Matfh` y `Vector3`
-No todas, decidir cuales son las más interesantes para su nivel.
+## Funciones matemáticas en `Random`, `Matfh` y `Vector3`
+No todas, decidir cuales son las más interesantes para su nivel y pensar ejercicios.
+
+* Redondeos
+* Trigonometría
+* Clamp
+* Lerp
+

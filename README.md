@@ -59,10 +59,10 @@ es más cómodo usar una o otra de las formas.
     * Crea un GameObject vacío y llámalo Vectores06
 	* Crea el script Vectores06 en la carpeta de scripts y escribe el código del ejercicio en él. 
 	* En el bucle utiliza `GameObject.Instantiate()`<sup>(2)</sup> para crear clones del prefab 
-	* Tendrás que calcular la coordenada x del vector de posición de cada cubo utilizando una fórmula muy simple utilizando el contador del bucle como variable.<br>
-	
-  ><sup>(2)</sup> Fíjate en que en la ayuda de Unity para muchas funciones aparecen varias versiones de la misma función con distintos parámetros.
-  Eso significa que podemos utilizar la que más nos guste o convenga en cada momento.
+	* Tendrás que calcular la coordenada x del vector de posición de cada cubo utilizando una fórmula muy simple utilizando el contador del bucle como variable.  
+  	
+		><sup>(2)</sup> Fíjate en que en la ayuda de Unity para muchas funciones aparecen varias versiones de la misma función con distintos parámetros.
+  		Eso significa que podemos utilizar la que más nos guste o convenga en cada momento.
   En este caso vamos a utilizar la primera.  
 	```cs
 	public GameObject cubePrefab;

@@ -59,11 +59,11 @@ es más cómodo usar una o otra de las formas.
     * Crea un GameObject vacío y llámalo Vectores06
 	* Crea el script Vectores06 en la carpeta de scripts y escribe el código del ejercicio en él. 
 	* En el bucle utiliza `GameObject.Instantiate()`<sup>(2)</sup> para crear clones del prefab 
-	* Tendrás que calcular la coordenada x del vector de posición de cada cubo utilizando una fórmula muy simple utilizando el contador del bucle como variable. 
+	* Tendrás que calcular la coordenada x del vector de posición de cada cubo utilizando una fórmula muy simple utilizando el contador del bucle como variable.
 	
   ><sup>(2)</sup> Fíjate en que en la ayuda de Unity para muchas funciones aparecen varias versiones de la misma función con distintos parámetros.
   Eso significa que podemos utilizar la que más nos guste o convenga en cada momento.
-  En este caso vamos a utilizar la primera. 
+  En este caso vamos a utilizar la primera.  
 	```cs
 	public GameObject cubePrefab;
 	//...
@@ -96,14 +96,33 @@ es más cómodo usar una o otra de las formas.
 13. Repite el ejercicio anterior, pero creando tú, tus propios prefabs de escalón y de descansillo<sup>(3)</sup> a  partir de la primitiva de un cubo  de Unity. ¿Por qué no funciona bien tu script del ejercicio anterior?. Arregla el script para estos nuevos prefabs.
 ><sup>(3)</sup> Crea una carpeta Vectores13 en la capeta de Prefabs y coloca ahí los que crees para este ejercicio. Haz lo mismo en todos los ejercicios en los que necesites crear prefabs.
 
-14. Seguir a un target movil
-6. Alcanza a un target movil en 5 segundos
-2. ??? Construye un reloj digital (prop entre seg/min/horas)
-1. Construye el segundero de un reloj. Debe rotar los grados que sean necesarios cada segundo, no de forma continua)
-2. Construye el minutero al ejercicio anterior. Debe rotar de forma continua
-3. Termina el reloj con la aguja de las horas.  Debe rotar de forma continua
-11. Añadir texturas a las agujas. Adaptar la escala de los cubos de las agujas a las texturas que se proporcionan.
-3. Añade al resultado del ejercicio anterior la aguja de las horas
+14. Ahora que te manejas mejor con los vectores vas a hacer que un gameobject se mueva con velocidad constante en la direccion x. Para eso tenemos que usar la función `Update()`. Lo que harás es actualizar la posición del gameobject basándote en el valor numérico de una propiedad que llamarás `v` y que debes declarar como pública para que se pueda rellenar desde el inspector. La velocidad introducida se interpretará como que está en m/s.
+En cada fotograma, a la posición actual del gameobject le sumaras su velocidad multiplicada por el tiempo transcurrido desde el ultimo *update* <sup>(4)</sup> en la dirección x. 
+ ><sup>(4)</sup> Recuerda que en un movimento rectilineo y con velocidad uniforme 
+ > s = v·t
+ >donde s es el espacio recorrido, v es la velocidad y t el tiempo transcurrido.
+ >Puedes leer el tiempo transcurrido desde el fotograma anterior con la propiedad `Time.deltaTime`.
+
+15. Repite el ejercicio anterior pero en vez de mover el gameobject en la dirección x, hazlo en la dirección dada por un vector que se introduzca también en el inspector. 
+Para evitar que la velocidad a la que se mueve el gameobject dependa de la longitud del vector introducido, normaliza el vector utilizando su propiedad `normalized`
+
+16. RETO: Repite el ejercicio 15, pero en vez de utilizar un vector para indicar la dirección usa dos ángulos. Uno (de 0 a 360 grados) para el ángulo en el plano horizontal y otro (de -90 a 90) para indicar la inclinación vertical. 
+>Tendrás que usar las funciones `Mathf.Sin()`, `Mathf.Cos()` y convertir los ángulos a radianes utilizando la propiedad `Mathf.DegToRad` (porque las funciones anteriores requieren que les pases el ángulo en radianes).
+>***Más información:***  *Estos dos ángulos, junto con la longitud del vector  son lo que se denomina sistema de coordenadas polares, mientras que el que usamos normalmente se denomina sistema cartesiano. <br>Ambos sistemas son válidos y útiles dependiendo de la situación, A pesar de que Unity use el sistema cartesiano para manejar vectores, en algánas mecánicas de juego nos puede interesar utilizar coordenadas polares, aunque después haya que convertirlas a cartesianas.*
+
+17. Abre la escena Vectores17 y ejecútala. Verás una esfera que se mueve con velocidad constante. Cada vez que ejecutes a escena se moverá en una dirección diferente. Tienes que hacer que el cubo con la X persiga a la esfera con velocidad constante (usa la misma propiedad pública, `v`, que en el ejercicio anterior, dándole un valor de 2 en el inspector). Ahora, en lugar de introducir la dirección en el inspector, tienes que hacer que tu programa la calcule teniendo en cuenta la posición del cubo y la posición de la esfera objetivo en cada instante.  
+18. Repite el ejercicio anterior pero en vez de introducir la velocidad del cubo en el inspector haz que tu programa calcule la velocidad del target y la iguale. Tu programa debe calcularla observando su posición en el primer y segundo fotogramas. (Utiliza dos condicionales y una propiedad que cuente los fotogramas para esto) 
+> Recuerda que el el target tiene una velocidad constante, por lo que v = s/t.
+
+19. Ahora, haz que tu programa estime la posición del target después de 5 segundos y ajuste la velocidad del cubo de forma que lo alcance en esa posición.
+
+20. Construye el segundero de un reloj. Utiliza un cilindro para el cuerpo del reloj y un cubo deformado para hacer de segundero, puedes utilizar un gameobject vacío adicional como padre del segundero, para que haga de pivote de giro del mismo). La aguja debe rotar los grados que sean necesarios de golpe cuando transcurra cada segundo, no de forma continua.
+
+21. Añade el minutero al reloj del ejercicio anterior. El minutero debe rotar los grados correspondientes a un minuto también de golpe, cuando el segundero haya completado una circunferencia completa.
+
+22. Termina el reloj con la aguja de las horas. Esta aguja debe rotar de forma continua, actualizando su posición en cada fotograma.
+
+23. Añadir texturas a las agujas. Puedes encontrarlas en la carpeta *Textures* del proyecto. Adapta la escala de los cubos de las agujas a las texturas que se proporcionan, para que no estén deformadas. Fíjate en la escala que tienes que darle a los cubos en cada dirección para cumplir esta condición. ¿Cómo podrías haberlas calculado para escrivir esos valores a la primera, en lugar de a ojo?
 
 5. Barra de daño
 7. Tiro al plato

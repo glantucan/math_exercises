@@ -14,7 +14,7 @@ Lee bien el enunciado de cada ejercicio, por si te da instrucciones diferentes.
 
 No toques lo que hay en el resto de carpetas del proyecto, salvo que te lo pida el enunciado del ejercicio. En algunos ejercicios hay ejemplos o código adicional que debes respetar si quieres que funcione todo correctamente cuando termines el ejercicio.
 
-Para evitar sustos, te recomiendo que cada vez que termines un ejercicio hagas una copia de seguridad del proyecto, siguiendo [estos pasos](#Copias-de-seguridad):
+Para evitar sustos, te recomiendo que cada vez que termines un ejercicio hagas una copia de seguridad del proyecto, siguiendo [estos pasos](#copias-de-seguridad-volver-al-inicio):
 
 Tú eres responsable de hacer copias de seguridad de tus archivos, en ningún caso un problema con el ordenador servirá de excusa para no realizar una entrega.
 
@@ -168,7 +168,7 @@ No todas, decidir cuales son las más interesantes para su nivel y pensar ejerci
 
 ## Apéndices
 
-### Copias de seguridad (<small>[Volver al inicio](#Ejercicios-de-Matemáticas-en-Unity))
+### Copias de seguridad (<small>[Volver al inicio](#instrucciones-l%C3%A9elas-atentamente))
 Para evitar sustos, te recomiendo que cada vez que termines un ejercicio hagas una copia de seguridad del proyecto, siguiendo estos pasos:
 
 1. Cierra Unity (IMPORTANTE)

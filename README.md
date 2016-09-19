@@ -49,7 +49,7 @@ es más cómodo usar una o otra de las formas.
 2. <img align="right" width="250" src="http://i.imgur.com/f6Br9pp.png" > Haz como en el ejercicio anterior, pero en la escena *Vectores02*. Ahora entra en juego la coordenada y.
 > Esta vez crea tú el script `Vectores02` fijándote en como está hecho en el ejercicio anterior, y coócaselo como componente al gameobject *Vectores_02*. <br><br>
 
-3. <img align="right" width="250" src="http://i.imgur.com/DuuKasj.png" > En este ejercicio tienes que hace que el cubo marcado con la X se de un punto a otro de la ruta marcada en el suelo. El cubo tiene un script con una función (`mover`) que permite hacer que se mueva con velocidad constante dándole como parámetro el vector de desplazamiento<sup>(1)</sup> como se ve en este ejemplo: <br>
+3. <img align="right" width="250" src="http://i.imgur.com/DuuKasj.png" > En este ejercicio tienes que hace que el cubo marcado con la X se de un punto a otro de la ruta marcada en el suelo. El cubo tiene un script con una función (`mover`) que permite hacer que se mueva con velocidad constante dándole como parámetro el vector de desplazamiento<sup>(1)</sup> como se ve en este ejemplo: <br><br>
   
   ```cs
   void Start() {
@@ -65,7 +65,7 @@ es más cómodo usar una o otra de las formas.
 Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fijándote en cómo está hecho en el ejercicio anterior.
 > Fíjate en que la textura del cubo tiene una rejilla: Las líneas más marcadas están separadas un metro entre sí. 
 
-5.  <img align="right" width="250" src="http://i.imgur.com/MIOIuF9.png" > En la escena Vectores05 haz que el cubo x se mueva por la superficie o las aristas del bloque pasando por todas las esferas en el orden que quieras. Crea tú el script y el gameobject en el que adjuntarlo como componente.   
+5.  <img align="right" width="250" src="http://i.imgur.com/MIOIuF9.png" > En la escena Vectores05 haz que el cubo x se mueva por la superficie o las aristas del bloque pasando por todas las esferas en el orden que quieras. Crea tú el script y el gameobject en el que adjuntarlo como componente.   <br><br><br><br>
   
  ---
   

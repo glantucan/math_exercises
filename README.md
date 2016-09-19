@@ -26,7 +26,7 @@ Los primeros ejercicios son para desarrollar la intuición sobre el sistema de c
  
  
 
-1. <img align="right" width="300" src="http://i.imgur.com/CHpN36s.png" />  Posiciona cada cubo en su marcador correspondiente usando vectores 
+1. <img align="right" width="250" src="http://i.imgur.com/CHpN36s.png" />  Posiciona cada cubo en su marcador correspondiente usando vectores 
 y teniendo en cuenta que el marcador X se encuentra en el origen de coordenadas. 
 Si la tienes desactivada, no olvides activar la rejilla de escena en *Guizmos* -> *Show Grid*, para que puedas estimar la posición de los marcadores con un mínimo de exactitud.
 Utiliza la función `Start()` y las variables que ya están definidas e inicializadas en el script `Vectores01` que está como componente del gameobject *Vectores_01*.
@@ -44,9 +44,9 @@ Usando los vectores unidad en las direcciones de los ejes:
 >&nbsp;&nbsp;&nbsp;&nbsp;   z -> Vector3.forward 
 Te recomiendo que lo hagas de las dos maneras por que dependiendo de la situación 
 es más cómodo usar una o otra de las formas.
-> **A recordar**: Al vector que va del origen de coordenadas a la posición un objecto se le llama ***vector posición*** del objeto.
+> **A recordar**: Al vector que va del origen de coordenadas a la posición un objecto se le llama ***vector posición*** del objeto.  
 
-2. Haz como en el ejercicio anterior, pero en la escena *Vectores02*. Ahora entra en juego la coordenada y.
+2. <img align="right" width="250" src="http://i.imgur.com/f6Br9pp.png" /> Haz como en el ejercicio anterior, pero en la escena *Vectores02*. Ahora entra en juego la coordenada y.
 > Esta vez crea tú el script `Vectores02` fijándote en como está hecho en el ejercicio anterior, y coócaselo como componente al gameobject *Vectores_02*.
 
 3. En este ejercicio tienes que hace que el cubo marcado con la X se de un punto a otro de la ruta marcada en el suelo. El cubo tiene un script con una función (`mover`) que permite hacer que se mueva con velocidad constante dándole como parámetro el vector de desplazamiento<sup>(1)</sup> como se ve en este ejemplo:

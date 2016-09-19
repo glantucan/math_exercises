@@ -10,7 +10,7 @@ Para empezar:
 
 En los primeros ejercicios tendrás la escena, el gameobject y el script ya creados para ayudarte, pero después tendrás que hacerlo tú. 
 
-Lee bien el enunciado de cada ejercicio, por si te da instrucciones diferentes.
+Lee bien el enunciado de cada ejercicio, en algunos casos puede darte instrucciones diferentes.
 
 No toques lo que hay en el resto de carpetas del proyecto, salvo que te lo pida el enunciado del ejercicio. En algunos ejercicios hay ejemplos o código adicional que debes respetar si quieres que funcione todo correctamente cuando termines el ejercicio.
 
@@ -28,6 +28,10 @@ Los primeros ejercicios son para desarrollar la intuición sobre el sistema de c
 y teniendo en cuenta que el marcador X se encuentra en el origen de coordenadas. 
 Si la tienes desactivada, no olvides activar la rejilla de escena en *Guizmos* -> *Show Grid*, para que puedas estimar la posición de los marcadores con un mínimo de exactitud.
 Utiliza la función `Start()` y las variables que ya están definidas e inicializadas en el script `Vectores01` que está como componente del gameobject *Vectores_01*.
+<div style="float:right; width:400px">
+![Captura ejercicio 1](http://i.imgur.com/IxUC6vS.png)
+</div>
+
 >  Ejemplo:
   ```cs
 cube_3.transform.position = new Vector3 (1, 0, 3);
@@ -174,8 +178,8 @@ Para evitar sustos, te recomiendo que cada vez que termines un ejercicio hagas u
 1. Cierra Unity (IMPORTANTE)
 2. Ve a la carpeta del proyecto y borra todas las subcarpetas menos *Assets* y *ProjectSettings*
 3. Comprime la carpeta del proyecto.
-4. Nombra el archivo comprimido con el nombre de la sección de ejercicios y el número del útimo ejercicio terminado: `Vetores01.7z`, `Vetores02.7z`, etc. 
-Si haces copias de seguridad parciales añade un número de versión al nombre, separándolo con un guión bajo (`_`): `Vetores07_v1.7z`, `Vetores07_v2.7z`, ...
+4. Nombra el archivo comprimido con el nombre de la sección de ejercicios y el número del útimo ejercicio terminado: `Vectores01.7z`, `Vectores02.7z`, etc. 
+Si haces copias de seguridad parciales añade un número de versión al nombre, separándolo con un guión bajo (`_`): `Vectores07_v1.7z`, `Vectores07_v2.7z`, ...
 
 
 Tú eres responsable de hacer copias de seguridad de tus archivos, en ningún caso un problema con el ordenador servirá de excusa para no realizar una entrega.

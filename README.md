@@ -49,7 +49,7 @@ es más cómodo usar una o otra de las formas.
 2. <img align="right" width="250" src="http://i.imgur.com/f6Br9pp.png" > Haz como en el ejercicio anterior, pero en la escena *Vectores02*. Ahora entra en juego la coordenada y.
 > Esta vez crea tú el script `Vectores02` fijándote en como está hecho en el ejercicio anterior, y coócaselo como componente al gameobject *Vectores_02*. <br><br>
 
-3. <img align="right" width="250" src="http://i.imgur.com/DuuKasj.png" > En este ejercicio tienes que hace que el cubo marcado con la X se de un punto a otro de la ruta marcada en el suelo. El cubo tiene un script con una función (`mover`) que permite hacer que se mueva con velocidad constante dándole como parámetro el vector de desplazamiento<sup>(1)</sup> como se ve en este ejemplo:
+3. <img align="right" width="250" src="http://i.imgur.com/DuuKasj.png" > En este ejercicio tienes que hace que el cubo marcado con la X se de un punto a otro de la ruta marcada en el suelo. El cubo tiene un script con una función (`mover`) que permite hacer que se mueva con velocidad constante dándole como parámetro el vector de desplazamiento<sup>(1)</sup> como se ve en este ejemplo: <br>
   
   ```cs
   void Start() {
@@ -61,7 +61,7 @@ es más cómodo usar una o otra de las formas.
   > <sup>(1)</sup> El ***vector desplazamiento*** es el vector que va desde donde esté el cubo hasta el lugar donde tiene que moverse.
   > **Aclaración**: La función `Move()` no existe como tal en Unity. Es una función que he creado para estos ejercicios para que no te tengas que preocupar de nada más que de averiguar los vectores de desplazamiento.
 
-4. Utilizando la misma técnica que en el ejercicio anterior mueve el cubo X de un vértice a otro del paralelepípedo grande que hay en la escena siguiendo el orden indicado por los marcadores y empezando en la X. 
+4. <img align="right" width="250" src="http://i.imgur.com/iyYwY8x.png" > Utilizando la misma técnica que en el ejercicio anterior mueve el cubo X de un vértice a otro del paralelepípedo grande que hay en la escena siguiendo el orden indicado por los marcadores y empezando en la X. 
 Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fijándote en cómo está hecho en el ejercicio anterior.
 > Fíjate en que la textura del cubo tiene una rejilla: Las líneas más marcadas están separadas un metro entre sí. 
 

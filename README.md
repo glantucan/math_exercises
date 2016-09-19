@@ -74,7 +74,7 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 
    ---
 
-6. Utilizando el prefab *cubePrefab*, genera una fila de 20 cubos consecutivos en la dirección x, empezando en la posición (-10, 0, 0)
+6.  <img align="right" width="250" src="http://i.imgur.com/pZLUNZT.png" > Utilizando el prefab *cubePrefab*, genera una fila de 20 cubos consecutivos en la dirección x, empezando en la posición (-10, 0, 0)
 	* Abre la escena Vectores06. 
     * Crea un gameobject vacío y llámalo *Vectores_06*.
 	* Crea el script `Vectores06` en la carpeta de scripts y escribe el código del ejercicio en él. 
@@ -94,7 +94,7 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 	} 
     ```
 	**Cuidado**: Los ejemplos de la página de Unity no siempre son muy claros y es fácil que te confundan si no entiendes bien la diferencia entre lo que hacen y lo que tú quieres hacer.
-7. Repite el ejercicio anterior pero genera la fila de cubos en la dirección z. Haz que empiece en la posición (-10, 0, 0).
+7. <img align="right" width="250" src="http://i.imgur.com/GLnCLzF.jpg" > Repite el ejercicio anterior pero genera la fila de cubos en la dirección z. Haz que empiece en la posición (-10, 0, 0).
   
   > A partir de ahora, aunque no se mencione en el enunciado, para cada ejercicio debes crear una nueva escena, con el nombre del tema seguido del número de ejercicio (en este caso será: Vectores07) y su correspondiente gameobject con el mismo nombre para colocar el script del ejercicio (también con el mismo nombre).
   
@@ -104,8 +104,7 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 	2. ¿Por qué si pinchas en el primer cubo de la fila que viene en la escena para indicarte como debe quedar, las coordenadas que aparecen en el componente *transform* no tienen nada que ver con las que te indico en el enunciado?<br>    
 
 
-
-9. RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab, sin modificar, que en los ejercicios anteriores. Hay varias formas. Una de ellas es usar la propiedad `normalized` de los vectores. Otra pasa por colocar las instancias como hijas un gameobject vacío y rotar después éste último. ¿Se te ocurre alguna otra?  
+9. <img align="right" width="250" src="http://i.imgur.com/hzNKYpB.jpg" >  RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab, sin modificar, que en los ejercicios anteriores. Hay varias formas. Una de ellas es usar la propiedad `normalized` de los vectores. Otra pasa por colocar las instancias como hijas un gameobject vacío y rotar después éste último. ¿Se te ocurre alguna otra?  
   
 10. Repite los ejercicios 6 y 7 dejando 2, y 3 espacios entre los cubos, respectivamente. (Nombra las escenas, gameobjects y escripts añadiéndoles _6 y _7 respectivamente)
 

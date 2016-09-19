@@ -26,7 +26,7 @@ Los primeros ejercicios son para desarrollar la intuición sobre el sistema de c
  
  
 
-1. <img align="right" width="200" src="http://imgur.com/CHpN36s" />  Posiciona cada cubo en su marcador correspondiente usando vectores 
+1. <img align="right" width="300" src="http://i.imgur.com/CHpN36s.png" />  Posiciona cada cubo en su marcador correspondiente usando vectores 
 y teniendo en cuenta que el marcador X se encuentra en el origen de coordenadas. 
 Si la tienes desactivada, no olvides activar la rejilla de escena en *Guizmos* -> *Show Grid*, para que puedas estimar la posición de los marcadores con un mínimo de exactitud.
 Utiliza la función `Start()` y las variables que ya están definidas e inicializadas en el script `Vectores01` que está como componente del gameobject *Vectores_01*.

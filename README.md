@@ -24,7 +24,7 @@ Tú eres responsable de hacer copias de seguridad de tus archivos, en ningún ca
 
 Los primeros ejercicios son para desarrollar la intuición sobre el sistema de coordenadas de Unity. Aunque me he preocupado de hacerlo difícil (para evitar tentaciones), siempre es posible hacer trampas para terminar los ejercicios rápido. Pero recuerda que la idea es que los ejercicios tienen un objetivo didáctico. Tenerlos terminados sin aprender no sirve de nada.  
  
-<img style="float:right" src="http://i.imgur.com/IxUC6vS.png" />  
+<img align="right" src="http://i.imgur.com/IxUC6vS.png" />  
 
 1. Posiciona cada cubo en su marcador correspondiente usando vectores 
 y teniendo en cuenta que el marcador X se encuentra en el origen de coordenadas. 

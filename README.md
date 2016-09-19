@@ -128,6 +128,17 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 
 16. RETO: Escribe un script que cree una escalera en espiral que de dos vueltas. Puedes crearte los prefabs a medida, o utilizar un prefab de cubo normal y confgurarlo desde el código para cada escalón ¿Qué es más fácil? Hazo de las dos formas si puedes. 
 
+
+---
+**En preparación**
+
+* Añadir uno de adaptar texturas entes del del reloj
+* Separar el de alcanzar un gameobject estimando su velocidad en 2. Primero uno de estimar velocidad y luego uno de alcanzar
+* El de rodar es complicado, ver como separar en varios más sencillos.
+* Poner uno de parar al llegar al destino
+* Poner uno de barra de daño con gemaobjects, sin usar GUI
+* Hablar con Quique para poner ejercicios de controlar shaders.
+
 17. Ahora que te manejas mejor con los vectores vas a hacer que un gameobject se mueva con velocidad constante en la dirección x. Para eso tenemos que usar la función `Update()`. Lo que harás es actualizar la posición del gameobject basándote en el valor numérico de una propiedad que llamarás `v` y que debes declarar como pública para que se pueda rellenar desde el inspector. La velocidad introducida se interpretará como que está en m/s.
 En cada fotograma, a la posición actual del gameobject le sumarás su velocidad multiplicada por el tiempo transcurrido desde el ultimo *update* <sup>(4)</sup> en la dirección x. 
  ><sup>(4)</sup> Recuerda que en un movimiento rectilíneo y con velocidad uniforme 
@@ -138,7 +149,7 @@ En cada fotograma, a la posición actual del gameobject le sumarás su velocidad
 18. Repite el ejercicio anterior pero en vez de mover el gameobject en la dirección x, hazlo en la dirección dada por un vector que se introduzca también en el inspector. 
 Para evitar que la velocidad a la que se mueve el gameobject dependa de la longitud del vector introducido, normaliza el vector utilizando su propiedad `normalized`
 
-19. RETO: Repite el ejercicio 15, pero en vez de utilizar un vector para indicar la dirección usa dos ángulos. Uno (de 0 a 360 grados) para el ángulo en el plano horizontal y otro (de -90 a 90) para indicar la inclinación vertical. 
+19. RETO: Repite el ejercicio 17, pero en vez de utilizar un vector para indicar la dirección usa dos ángulos. Uno (de 0 a 360 grados) para el ángulo en el plano horizontal y otro (de -90 a 90) para indicar la inclinación vertical. 
 >Tendrás que usar las funciones `Mathf.Sin()`, `Mathf.Cos()` y convertir los ángulos a radianes utilizando la propiedad `Mathf.DegToRad` (porque las funciones anteriores requieren que les pases el ángulo en radianes).
 >***Más información:***  *Estos dos ángulos, junto con la longitud del vector  son lo que se denomina sistema de coordenadas polares, mientras que el que usamos normalmente se denomina sistema cartesiano. <br>Ambos sistemas son válidos y útiles dependiendo de la situación, A pesar de que Unity use el sistema cartesiano para manejar vectores, en algunas mecánicas de juego nos puede interesar utilizar coordenadas polares, aunque después haya que convertirlas a cartesianas.*
 

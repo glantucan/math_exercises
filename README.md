@@ -104,9 +104,9 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 	2. ¿Por qué si pinchas en el primer cubo de la fila que viene en la escena para indicarte como debe quedar, las coordenadas que aparecen en el componente *transform* no tienen nada que ver con las que te indico en el enunciado?<br>    
 
 
-9. <img align="right" width="250" src="http://i.imgur.com/hzNKYpB.jpg" >  RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab, sin modificar, que en los ejercicios anteriores. Hay varias formas. Una de ellas es usar la propiedad `normalized` de los vectores. Otra pasa por colocar las instancias como hijas un gameobject vacío y rotar después éste último. ¿Se te ocurre alguna otra?  
+9. <img align="right" width="250" src="http://i.imgur.com/hzNKYpB.jpg" >  RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab, sin modificar, que en los ejercicios anteriores. Hay varias formas. Una de ellas es usar la propiedad `normalized` de los vectores. Otra pasa por colocar las instancias como hijas un gameobject vacío y rotar después éste último. ¿Se te ocurre alguna otra?  <br><br>
   
-10. Repite los ejercicios 6 y 7 dejando 2, y 3 espacios entre los cubos, respectivamente. (Nombra las escenas, gameobjects y escripts añadiéndoles _6 y _7 respectivamente)
+10. Repite los ejercicios 6 y 7 dejando 2, y 3 espacios entre los cubos, respectivamente. (Nombra las escenas, gameobjects y escripts añadiéndoles _6 y _7 respectivamente. Por ejemplo: *Vectores10_6*)
 
 11. Construye una escalera de cubos, usando el prefab de los ejercicios anteriores. No modifiques el prefab. 
 

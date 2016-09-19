@@ -1,9 +1,22 @@
 # Ejercicios de Matemáticas en Unity
-Todo el material necesario para realizar los ejercicios están dentro esta misma carpeta de proyecto de Unity.
 
-Cada ejercicio tiene una escena correspondiente en la carpeta Scenes dentro de Assets. Para trabajar en ese ejercicio abre su escena. Encontrarás un gameobject con una etiqueta con el nombre del ejercicio. Ese gameobject contiene un componente con el script en el que tienes que trabajar para completar el ejercicio. Los scripts también se llaman igual que el ejercicio para evitar confusiones.
+## Instrucciones (Léelas atentamente)
+Todo el material necesario para realizar los ejercicios de cada sección estarán dentro de la carpeta de Assets del proyecto de Unity con el nombre de la sección. Para empezar a realizar los ejercicios de una sección pincha en el título, es un enlace de descarga.
 
-No toques lo que hay en el resto de carpetas, salvo que te lo pida el enunciado del ejercicio. En algunos ejercicios hay ejemplos o código adicional que debes respetar si quieres que funcione todo correctamente cuando termines el ejercicio.
+Para empezar:
+1. Cada ejercicio deberá completarse en una escena diferente en la carpeta Scenes del proyecto, dentro de Assets. Para el primer ejercicio de la sección Vectores deberás llamar a la escena *Vectores01*, para el segundo, *Vectores02*, ...
+2. Dentro de cada escena crea un gameobject vacío para colocar el script en el que vas a trabajar. Nombra al gameobject con el nombre de la sección y el número del ejercicio: *Vectores_01*, *Vectores_02*, etc.
+3. Con el script de cada ejercicio haremos algo parecido. Crea el script dentro de la carpeta Scripts, dentro de Assets y nómbralo siguiendo el patrón: `Vectores01`, `Vectores02`, etc. 
+
+En los primeros ejercicios tendrás la escena, el gameobject y el script ya creados para ayudarte, pero después tendrás que hacerlo tú. 
+
+Lee bien el enunciado de cada ejercicio, por si te da instrucciones diferentes.
+
+No toques lo que hay en el resto de carpetas del proyecto, salvo que te lo pida el enunciado del ejercicio. En algunos ejercicios hay ejemplos o código adicional que debes respetar si quieres que funcione todo correctamente cuando termines el ejercicio.
+
+Para evitar sustos, te recomiendo que cada vez que termines un ejercicio hagas una copia de seguridad del proyecto, siguiendo [estos pasos](#Copias-de-seguridad):
+
+Tú eres responsable de hacer copias de seguridad de tus archivos, en ningún caso un problema con el ordenador servirá de excusa para no realizar una entrega.
 
 
 
@@ -153,3 +166,16 @@ No todas, decidir cuales son las más interesantes para su nivel y pensar ejerci
 * Clamp
 * Lerp
 
+## Apéndices
+
+### Copias de seguridad (<small>[Volver al inicio](#Ejercicios-de-Matemáticas-en-Unity))
+Para evitar sustos, te recomiendo que cada vez que termines un ejercicio hagas una copia de seguridad del proyecto, siguiendo estos pasos:
+
+1. Cierra Unity (IMPORTANTE)
+2. Ve a la carpeta del proyecto y borra todas las subcarpetas menos *Assets* y *ProjectSettings*
+3. Comprime la carpeta del proyecto.
+4. Nombra el archivo comprimido con el nombre de la sección de ejercicios y el número del útimo ejercicio terminado: `Vetores01.7z`, `Vetores02.7z`, etc. 
+Si haces copias de seguridad parciales añade un número de versión al nombre, separándolo con un guión bajo (`_`): `Vetores07_v1.7z`, `Vetores07_v2.7z`, ...
+
+
+Tú eres responsable de hacer copias de seguridad de tus archivos, en ningún caso un problema con el ordenador servirá de excusa para no realizar una entrega.

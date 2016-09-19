@@ -26,7 +26,7 @@ Los primeros ejercicios son para desarrollar la intuición sobre el sistema de c
  
  
 
-1. <img align="right" width="200" src="http://i.imgur.com/IxUC6vS.png" />  Posiciona cada cubo en su marcador correspondiente usando vectores 
+1. <img align="right" width="200" src="http://imgur.com/CHpN36s" />  Posiciona cada cubo en su marcador correspondiente usando vectores 
 y teniendo en cuenta que el marcador X se encuentra en el origen de coordenadas. 
 Si la tienes desactivada, no olvides activar la rejilla de escena en *Guizmos* -> *Show Grid*, para que puedas estimar la posición de los marcadores con un mínimo de exactitud.
 Utiliza la función `Start()` y las variables que ya están definidas e inicializadas en el script `Vectores01` que está como componente del gameobject *Vectores_01*.
@@ -36,7 +36,7 @@ cube_3.transform.position = new Vector3 (1, 0, 3);
 ```
 Tambien lo puedes hacer así:
   ```cs
-cube_3.transform.position = 1*Vector3.right + 3*Vector3.forward;
+cube_3.transform.position = 1F*Vector3.right + 3F*Vector3.forward;
 ```
 Usando los vectores unidad en las direcciones de los ejes: 
 >&nbsp;&nbsp;&nbsp;&nbsp;   x -> Vector3.right 

@@ -6,7 +6,7 @@ public class SimpleMove : MonoBehaviour {
 
 	[SerializeField] float speed;
 
-	private List<Vector3> displacements;
+	private List<Vector3> displacements = new List<Vector3>();
 	private int currentIndex;
 	private Vector3 currentDisplacement;
 	private Vector3 currentTarget;
@@ -14,10 +14,6 @@ public class SimpleMove : MonoBehaviour {
 	private bool hasStarted;
 	private bool hasFinished;
 	private int frameCount;
-
-	void Start() {
-		this.displacements = new List<Vector3>();
-	}
 
 	void Update() {
 		frameCount++;

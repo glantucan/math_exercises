@@ -105,12 +105,18 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 
 
 9. <img align="right" width="250" src="http://i.imgur.com/hzNKYpB.jpg" >  RETO: Haz una fila de cubos en diagonal utilizando el mismo prefab, sin modificar, que en los ejercicios anteriores. Hay varias formas. Una de ellas es rotar cada instancia del cubo y usar la propiedad `normalized` de los vectores al colocarlo. ¿Se te ocurre alguna otra?  <br><br><br>
+
+10. Rehaz el ejercicio 5, pero esta vez configurando los movimientos desde el editor en un array de Vector3. Para ello, debes crear un nuevo script Vectores10. Este script debe exponer una variable llamada ```movements``` que permita configurar un array de puntos desde el editor de Unity. Después, en el Start, tras introducir la misma posición de inicio que en el ejercicio 5 original, usa un loop para leer los valores de ```movements``` y asignarlos como siguiente movimiento: ```mover.Move(nextMovement);```.
+
+    > Deberás duplicar la escena y renombrarla *Vectores10*, y en esta nueva escena cambiar y configurar el nuevo script para poder hacer pruebas.
+
+    > Para acceder al array usa una variable índice, recorriendo cada posición del array hasta llegar al final. Recuerda que el número de elementos en un array viene dado por ```movements.Length``` y que el primer elemento está en la posición ```movements[0]```.<br>
   
-10. Repite los ejercicios 6 y 7 dejando 2, y 3 espacios entre los cubos, respectivamente. (Nombra las escenas, gameobjects y escripts añadiéndoles _6 y _7 respectivamente. Por ejemplo: *Vectores10_6*)
+11. Repite los ejercicios 6 y 7 dejando 2, y 3 espacios entre los cubos, respectivamente. (Nombra las escenas, gameobjects y escripts añadiéndoles _6 y _7 respectivamente. Por ejemplo: *Vectores11_6*)
 
-11. Construye una escalera de cubos, usando el prefab de los ejercicios anteriores. No modifiques el prefab. 
+12. Construye una escalera de cubos, usando el prefab de los ejercicios anteriores. No modifiques el prefab. 
 
-12. Construye una escalera de nuevo, pero alternando clones del prefab *dark_stairstep* y *light_stairstep*. No modifiques los prefabs.
+13. Construye una escalera de nuevo, pero alternando clones del prefab *dark_stairstep* y *light_stairstep*. No modifiques los prefabs.
 
  > Podrías hacerlo utilizando dos bucles (hazlo así primero, si quieres), pero es más corto hacerlo si recuerdas o aprendes a usar el operador módulo: `%`. 
  > La expresión:  
@@ -119,14 +125,14 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
   ```
  > Devuelve el resto de la división entera de `7` entre `2`. Es decir, el resultado de la división sería `3`, dejando un resto de `1`. O sea que `resto` tendría el valor `1`. Utilizando este operador en un condicional puedes averiguar si estás en un escalón par o impar, y crear la copia del prefab que corresponda.
  
-13. Construye una escalera de cubos dejando descansillos (con instancias del prefab *stairlanding*) cada 5 escalones. Aquí es fundamental que pienses bien como construir los condicionales.
+14. Construye una escalera de cubos dejando descansillos (con instancias del prefab *stairlanding*) cada 5 escalones. Aquí es fundamental que pienses bien como construir los condicionales.
 
-14. Repite el ejercicio anterior, pero creando tú, tus propios prefabs de escalón y de descansillo<sup>(3)</sup> a  partir de la primitiva de un cubo  de Unity. Intenta usar el script del ejercicio anterior ¿Por qué no funciona bien tu script del ejercicio anterior?. Arregla el script para estos nuevos prefabs.
-><sup>(3)</sup> Crea una carpeta Vectores14 en la capeta de Prefabs y coloca ahí los que crees para este ejercicio. Haz lo mismo en todos los ejercicios en los que necesites crear prefabs.
+15. Repite el ejercicio anterior, pero creando tú, tus propios prefabs de escalón y de descansillo<sup>(3)</sup> a  partir de la primitiva de un cubo  de Unity. Intenta usar el script del ejercicio anterior ¿Por qué no funciona bien tu script del ejercicio anterior?. Arregla el script para estos nuevos prefabs.
+><sup>(3)</sup> Crea una carpeta Vectores15 en la capeta de Prefabs y coloca ahí los que crees para este ejercicio. Haz lo mismo en todos los ejercicios en los que necesites crear prefabs.
 
-15. RETO: Crea una escalera como en los ejercicios anteriores, pero usa cn cubo normal como prefab, colocándolo y deformándolo como sea necesario para que la escalera suba 3 metros de altitud en una distancia de 4 metros de longitud, y tenga 15 escalones. Parametriza estas cantidades de forma que se puedan configurar desde el inspector
+16. RETO: Crea una escalera como en los ejercicios anteriores, pero usa cn cubo normal como prefab, colocándolo y deformándolo como sea necesario para que la escalera suba 3 metros de altitud en una distancia de 4 metros de longitud, y tenga 15 escalones. Parametriza estas cantidades de forma que se puedan configurar desde el inspector
 
-16. RETO: Escribe un script que cree una escalera en espiral que de dos vueltas. Puedes crearte los prefabs a medida, o utilizar un prefab de cubo normal y configurarlo desde el código para cada escalón ¿Qué es más fácil? Hazlo de las dos formas si puedes. 
+17. RETO: Escribe un script que cree una escalera en espiral que de dos vueltas. Puedes crearte los prefabs a medida, o utilizar un prefab de cubo normal y configurarlo desde el código para cada escalón ¿Qué es más fácil? Hazlo de las dos formas si puedes. 
 
 
 ## Apéndices

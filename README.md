@@ -133,14 +133,13 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 16. RETO: Crea una escalera como en los ejercicios anteriores, pero usa cn cubo normal como prefab, colocándolo y deformándolo como sea necesario para que la escalera suba 3 metros de altitud en una distancia de 4 metros de longitud, y tenga 15 escalones. Parametriza estas cantidades de forma que se puedan configurar desde el inspector
 
 17. RETO: Escribe un script que cree una escalera en espiral que de dos vueltas. Puedes crearte los prefabs a medida, o utilizar un prefab de cubo normal y configurarlo desde el código para cada escalón ¿Qué es más fácil? Hazlo de las dos formas si puedes.  <br><br>
-
 **Entrega 2**<br>
 18. Ahora que te manejas mejor con los vectores vas a hacer que un gameobject se mueva con velocidad constante en la dirección x. Para eso tenemos que usar la función `Update()`. Lo que harás es actualizar la posición del gameobject basándote en el valor numérico de una propiedad que llamarás `v` (la velocidad) y que debes declarar como pública para que se pueda rellenar desde el inspector. La velocidad introducida se interpretará como que está en m/s.
 En cada fotograma, a la posición actual del gameobject le sumarás su velocidad multiplicada por el tiempo transcurrido desde el ultimo *update* <sup>(4)</sup> en la dirección x. 
  ><sup>(4)</sup> Recuerda que en un movimiento rectilíneo y con velocidad uniforme 
  > *s = v·t*
  >donde *s* es el espacio recorrido (o a recorrer), *v* es la velocidad y *t* el tiempo transcurrido.
- >Puedes leer el tiempo transcurrido desde el fotograma anterior con la propiedad `Time.deltaTime`.
+ >Puedes leer el tiempo transcurrido desde el fotograma anterior con la propiedad `Time.deltaTime`.  
 
 19. Repite el ejercicio anterior, pero en vez de mover el gameobject en la dirección x, haz que pase por una posición dada por un vector que se introduzca también en el inspector. 
 Para evitar que la velocidad a la que se mueve el gameobject dependa de la longitud del vector introducido, normaliza el vector utilizando su propiedad `normalized`. Esto hará que ese vector conserve la dirección pero tenga longitud 1.

@@ -144,9 +144,10 @@ En cada fotograma, a la posición actual del gameobject le sumarás su velocidad
 19. Repite el ejercicio anterior pero en vez de mover el gameobject en la dirección x, hazlo en la dirección dada por un vector que se introduzca también en el inspector. 
 Para evitar que la velocidad a la que se mueve el gameobject dependa de la longitud del vector introducido, normaliza el vector utilizando su propiedad `normalized`. Esto hará que ese vector conserve la dirección pero tenga longitud 1.
 
-20. RETO: Repite el ejercicio 18, pero en vez de utilizar un vector para indicar la dirección usa dos ángulos. Uno (de 0 a 360 grados) para el ángulo en el plano horizontal, y otro (de -90 a 90) para indicar la inclinación vertical. 
+20. <img align="right" width="230" src="./imgs/coordenadasEsfericas.jpg" >mRETO: Repite el ejercicio 18, pero en vez de utilizar un vector para indicar la dirección usa dos ángulos. Uno (de 0 a 360 grados) para el ángulo en el plano horizontal, y otro (de -90 a 90) para indicar la inclinación vertical (son la longitud y la latitud de los mapas cartográficos). <sup>5</sup>
 >Tendrás que usar las funciones `Mathf.Sin()`, `Mathf.Cos()` y convertir los ángulos a radianes utilizando la propiedad `Mathf.DegToRad` (porque las funciones anteriores requieren que les pases el ángulo en radianes).
->***Más información:***  *Estos dos ángulos, junto con la longitud del vector  son lo que se denomina sistema de coordenadas polares, mientras que el que usamos normalmente se denomina sistema cartesiano. <br>Ambos sistemas son válidos y útiles dependiendo de la situación, A pesar de que Unity use el sistema cartesiano para manejar vectores, en algunas mecánicas de juego nos puede interesar utilizar coordenadas polares, aunque después haya que convertirlas a cartesianas.*
+><sup>(5)</sup> Recuerda que Unity los ángulos se miden en el sentido de las manecillas del reloj.
+>***Más información:***  *Estos dos ángulos, junto con la longitud del vector  son lo que se denomina sistema de coordenadas esféricas, mientras que el que usamos normalmente se denomina sistema cartesiano. <br>Ambos sistemas son válidos y útiles dependiendo de la situación, A pesar de que Unity use el sistema cartesiano para manejar vectores, en algunas mecánicas de juego nos puede interesar utilizar coordenadas polares, aunque después haya que convertirlas a cartesianas.*
 
 
 21. Continúa el ejercicio anterior (copia la escena y el script y renombra para reflejar que es un nuevo ejercicio) y haz que el cubo se pare exactamente cuando llegue a la posición elegida.

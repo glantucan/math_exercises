@@ -142,7 +142,8 @@ En cada fotograma, a la posición actual del gameobject le sumarás su velocidad
  >Puedes leer el tiempo transcurrido desde el fotograma anterior con la propiedad `Time.deltaTime`.  
 
 19. Repite el ejercicio anterior, pero en vez de mover el gameobject en la dirección x, haz que pase por una posición dada por un vector que se introduzca también en el inspector. 
-Para evitar que la velocidad a la que se mueve el gameobject dependa de la longitud del vector introducido, normaliza el vector utilizando su propiedad `normalized`. Esto hará que ese vector conserve la dirección pero tenga longitud 1.
+Para evitar que la velocidad a la que se mueve el gameobject dependa de la longitud del vector introducido, normaliza el vector de dirección, utilizando su propiedad `normalized`, antes de multiplicar por la velocidad. Esto hará que ese vector conserve la dirección pero tenga longitud 1.
+No asumas que el cubo está en la posición (0,0,0). El programa debe funcionar cuando el cubo esté en cualquier otra posición también.
 
 20. <img align="right" width="230" src="./imgs/coordenadasEsfericas.jpg" >RETO: Repite el ejercicio 18, pero en vez de utilizar un vector para indicar la dirección usa dos ángulos. Uno (de 0 a 360 grados) para el ángulo en el plano horizontal, y otro (de -90 a 90) para indicar la inclinación vertical (son la longitud y la latitud de los mapas cartográficos). <sup>5</sup>
 >Tendrás que usar las funciones `Mathf.Sin()`, `Mathf.Cos()` y convertir los ángulos a radianes utilizando la propiedad `Mathf.DegToRad` (porque las funciones anteriores requieren que les pases el ángulo en radianes).

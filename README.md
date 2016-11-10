@@ -167,10 +167,11 @@ Debes hacer que el script lea la posición de la esfera en dos fotogramas consec
 > No vale leer directamente la propiedad velocidad de la esfera (en caso de que sepas como hacer esto)  
 > Normalmente no es una buena idea medir la velocidad entre el primer y segundo programa, porque Unity realiza un montón de tareas internas al iniciarse y la velocidad medida no es entre esos dos fotogramas no es fiable. Espera por lo menos al segundo fotograma para tomar la primera posición de la medida.
 
-27. Copia la escena del ejercicio anterior. Crea en ella un cubo y crea un script que, usando la magnitud de la velocidad medida haga que el cubo persiga a la esfera. Asegúrate de que el cubo persigue a la esfera desde cualquier posición de la escena.
+26. Copia la escena del ejercicio anterior. Crea en ella un cubo y crea un script que, usando la magnitud de la velocidad medida haga que el cubo persiga a la esfera. Asegúrate de que el cubo persigue a la esfera desde cualquier posición de la escena.
 
-29. Repite el ejercicio anterior pero de forma que el cubo alcance a la esfera y los dos se paren en ese momento.
+27. Repite el ejercicio anterior pero de forma que el cubo alcance a la esfera y los dos se paren en ese momento.
 
+28. Descarga [este proyecto](./randomDestation.7z). Debes conseguir que el player intente alcanzar un destino aleatorio que se resetea cada vez que lo alcance o pasen 150 fotogramas. En la clase player tienes ya una serie de funciones y propiedades definidas que no debes modificar, pero sí utilizar para que se muestre la posición del destino actual (`ShowDestination()`), el número de fotogramas que faltan para el reseteo (`ShowFrameCount()`), el número de veces que se ha alcazado el destino (`ShowGotchas()`) y el número de veces que se ha agotado el tiempo antes de alcanzarlo(`ShowTimeouts()`).
 
 ## Apéndices
 

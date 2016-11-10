@@ -171,7 +171,7 @@ Debes hacer que el script lea la posición de la esfera en dos fotogramas consec
 
 27. Repite el ejercicio anterior pero de forma que el cubo alcance a la esfera y los dos se paren en ese momento.
 
-28. Descarga [este proyecto](./randomDestation.7z). Debes conseguir que el player intente alcanzar un destino aleatorio que se resetea cada vez que lo alcance o pasen 150 fotogramas. En la clase player tienes ya una serie de funciones y propiedades definidas que no debes modificar, pero sí utilizar para que se muestre la posición del destino actual (`ShowDestination()`), el número de fotogramas que faltan para el reseteo (`ShowFrameCount()`), el número de veces que se ha alcazado el destino (`ShowGotchas()`) y el número de veces que se ha agotado el tiempo antes de alcanzarlo(`ShowTimeouts()`).
+28. Descarga [este proyecto](https://github.com/glantucan/math_exercises/blob/master/randomDestination.7z). Debes conseguir que el player intente alcanzar un destino aleatorio que se resetea cada vez que lo alcance o pasen 150 fotogramas. En la clase player tienes ya una serie de funciones y propiedades definidas que no debes modificar, pero sí utilizar para que se muestre la posición del destino actual (`ShowDestination()`), el número de fotogramas que faltan para el reseteo (`ShowFrameCount()`), el número de veces que se ha alcazado el destino (`ShowGotchas()`) y el número de veces que se ha agotado el tiempo antes de alcanzarlo(`ShowTimeouts()`).
 
 ## Apéndices
 

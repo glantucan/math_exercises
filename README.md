@@ -130,12 +130,12 @@ Crea tú el gameobject *Vectores_04* para el script y el script `Vectores04`, fi
 15. Repite el ejercicio anterior, pero creando tú, tus propios prefabs de escalón y de descansillo<sup>(3)</sup> a  partir de la primitiva de un cubo  de Unity. Intenta usar el script del ejercicio anterior ¿Por qué no funciona bien tu script del ejercicio anterior?. Arregla el script para estos nuevos prefabs.
 ><sup>(3)</sup> Crea una carpeta Vectores15 en la capeta de Prefabs y coloca ahí los que crees para este ejercicio. Haz lo mismo en todos los ejercicios en los que necesites crear prefabs.
 
-16. RETO: Crea una escalera como en los ejercicios anteriores, pero usa cn cubo normal como prefab, colocándolo y deformándolo como sea necesario para que la escalera suba 3 metros de altitud en una distancia de 4 metros de longitud, y tenga 15 escalones. Parametriza estas cantidades de forma que se puedan configurar desde el inspector
+16. RETO: Crea una escalera como en los ejercicios anteriores, pero usa un cubo normal como prefab, colocándolo y deformándolo como sea necesario para que la escalera suba 3 metros de altitud en una distancia de 4 metros de longitud, y tenga 15 escalones. Parametriza estas cantidades de forma que se puedan configurar desde el inspector.
 
 17. RETO: Escribe un script que cree una escalera en espiral que de dos vueltas. Puedes crearte los prefabs a medida, o utilizar un prefab de cubo normal y configurarlo desde el código para cada escalón ¿Qué es más fácil? Hazlo de las dos formas si puedes.  <br><br>
 **Entrega 2**<br>
 18. Ahora que te manejas mejor con los vectores vas a hacer que un gameobject se mueva con velocidad constante en la dirección x. Para eso tenemos que usar la función `Update()`. Lo que harás es actualizar la posición del gameobject basándote en el valor numérico de una propiedad que llamarás `v` (la velocidad) y que debes declarar como pública para que se pueda rellenar desde el inspector. La velocidad introducida se interpretará como que está en m/s.
-En cada fotograma, a la posición actual del gameobject le sumarás su velocidad multiplicada por el tiempo transcurrido desde el ultimo *update* <sup>(4)</sup> en la dirección x. 
+En cada fotograma, a la posición actual del gameobject le sumarás su velocidad multiplicada por el tiempo transcurrido desde el último *update* <sup>(4)</sup> en la dirección x. 
  ><sup>(4)</sup> Recuerda que en un movimiento rectilíneo y con velocidad uniforme 
  > *s = v·t*
  >donde *s* es el espacio recorrido (o a recorrer), *v* es la velocidad y *t* el tiempo transcurrido.
@@ -147,8 +147,8 @@ No asumas que el cubo está en la posición (0,0,0). El programa debe funcionar 
 
 20. <img align="right" width="230" src="./imgs/coordenadasEsfericas.jpg" >RETO: Repite el ejercicio 18, pero en vez de utilizar un vector para indicar la dirección usa dos ángulos. Uno (de 0 a 360 grados) para el ángulo en el plano horizontal, y otro (de -90 a 90) para indicar la inclinación vertical (son la longitud y la latitud de los mapas cartográficos). <sup>5</sup>
 >Tendrás que usar las funciones `Mathf.Sin()`, `Mathf.Cos()` y convertir los ángulos a radianes utilizando la propiedad `Mathf.DegToRad` (porque las funciones anteriores requieren que les pases el ángulo en radianes).
-><sup>(5)</sup> Recuerda que Unity los ángulos se miden en el sentido de las manecillas del reloj.
->***Más información:***  *Estos dos ángulos, junto con la longitud del vector  son lo que se denomina sistema de coordenadas esféricas, mientras que el que usamos normalmente se denomina sistema cartesiano. <br>Ambos sistemas son válidos y útiles dependiendo de la situación, A pesar de que Unity use el sistema cartesiano para manejar vectores, en algunas mecánicas de juego nos puede interesar utilizar coordenadas polares, aunque después haya que convertirlas a cartesianas.*
+><sup>(5)</sup> Recuerda que en Unity los ángulos se miden en el sentido de las manecillas del reloj.
+>***Más información:***  *Estos dos ángulos, junto con la longitud del vector  son lo que se denomina sistema de coordenadas esféricas, mientras que el que usamos normalmente se denomina sistema cartesiano. <br>Ambos sistemas son válidos y útiles dependiendo de la situación. A pesar de que Unity use el sistema cartesiano para manejar vectores, en algunas mecánicas de juego nos puede interesar utilizar coordenadas polares, aunque después haya que convertirlas a cartesianas.*
 
 
 21. Continúa el ejercicio 19 (copia la escena y el script y renombra para reflejar que es un nuevo ejercicio) y haz que el cubo se pare exactamente cuando llegue a la posición elegida.
@@ -164,8 +164,8 @@ No asumas que el cubo está en la posición (0,0,0). El programa debe funcionar 
 
 25. Repite el ejercicio anterior y haz que un script externo (en el gameobject vacío *Vectores_25*) mida el vector velocidad de la esfera y lo muestre en la consola.  
 Debes hacer que el script lea la posición de la esfera en dos fotogramas consecutivos y calcule el vector distancia entre ellos. Usando el tiempo transcurrido entre los dos fotogramas, es fácil calcular la velocidad. 
-> No vale leer directamente la propiedad velocidad de la esfera (en caso de que sepas como hacer esto)  
-> Normalmente no es una buena idea medir la velocidad entre el primer y segundo programa, porque Unity realiza un montón de tareas internas al iniciarse y la velocidad medida no es entre esos dos fotogramas no es fiable. Espera por lo menos al segundo fotograma para tomar la primera posición de la medida.
+> No vale leer directamente la propiedad velocidad de la esfera (en caso de que sepas como hacer esto).
+> Normalmente no es una buena idea medir la velocidad entre el primer y segundo fotograma, porque Unity realiza un montón de tareas internas al iniciarse y la velocidad medida entre esos dos fotogramas no es fiable. Espera por lo menos al segundo fotograma para tomar la primera posición de la medida.
 
 26. Copia la escena del ejercicio anterior. Crea en ella un cubo y crea un script que, usando la magnitud de la velocidad medida haga que el cubo persiga a la esfera. Asegúrate de que el cubo persigue a la esfera desde cualquier posición de la escena.
 
